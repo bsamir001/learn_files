@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<h1>Customer List</h1>
+<ul>
+    {% for customer in customers %}
+        <li> {{ customer.first_name }}</li>
+        <li> {{ customer.last_name }}</li>
+        <li> {{ customer.phone }}</li>
+        <li> {{ customer.country }}</li>
+        <li> {{ customer.email }}</li>
+        <li> {{ customer.age }}</li>
+        <li> {{ customer.city }}</li>
+    {% endfor %}
+</ul>
+</body>

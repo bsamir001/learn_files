@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>{{ post.title }}</h2>
+    <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
+    <p>نویسنده: {{ post.author.username }}</p>
+    <p>تاریخ ایجاد: {{ post.created_at }}</p>
+    <p>{{ post.content }}</p>
+{% endblock %}
